@@ -1,4 +1,4 @@
-package ru.shiftlab.cftteam.libraries.navigation
+package com.example.navigation
 
 import android.content.Intent
 import androidx.fragment.app.Fragment

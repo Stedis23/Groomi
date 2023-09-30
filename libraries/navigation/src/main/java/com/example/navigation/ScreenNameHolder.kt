@@ -1,4 +1,4 @@
-package ru.shiftlab.cftteam.libraries.navigation
+package com.example.navigation
 
 interface ScreenNameHolder {
 

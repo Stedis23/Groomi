@@ -1,5 +1,6 @@
-package ru.shiftlab.cftteam.libraries.navigation
+package com.example.navigation
 
+import com.example.navigation.FragmentDestination
 import kotlinx.coroutines.flow.StateFlow
 
 interface MainRouter {

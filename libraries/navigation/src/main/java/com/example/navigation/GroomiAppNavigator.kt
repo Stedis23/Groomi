@@ -1,20 +1,19 @@
-package ru.shiftlab.cftteam.libraries.navigation
+package com.example.navigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentTransaction
-import com.example.navigation.R
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 
 fun Fragment.getBackViewName(errorMessage: String = "back view name not found") =
-	arguments?.getString(CftTeamAppNavigator.BACK_VIEW_KEY) ?: throw IllegalArgumentException(errorMessage)
+	arguments?.getString(GroomiAppNavigator.BACK_VIEW_KEY) ?: throw IllegalArgumentException(errorMessage)
 
 fun Fragment.getBackViewNameOrNull() =
-	arguments?.getString(CftTeamAppNavigator.BACK_VIEW_KEY)
+	arguments?.getString(GroomiAppNavigator.BACK_VIEW_KEY)
 
-class CftTeamAppNavigator constructor(
+class GroomiAppNavigator constructor(
 	activity: FragmentActivity,
 	containerId: Int
 ) : AppNavigator(

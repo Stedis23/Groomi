@@ -16,5 +16,6 @@ rootProject.name = "Groomi"
 include ':app'
 include ':libraries:viewbinding'
 include ':libraries:network'
-include ':features:salons:homesalons'
 include ':libraries:navigation'
+include ':features:salons:homesalons'
+include ':features:splash'
