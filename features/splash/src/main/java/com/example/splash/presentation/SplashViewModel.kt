@@ -1,10 +1,9 @@
 package com.example.splash.presentation
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
-import ru.shiftlab.cftteam.features.splash.presentation.SplashRouter
 
 class SplashViewModel(
+	private val skipWelcome: Boolean,
 	private val router: SplashRouter,
 ) : ViewModel(){
 
@@ -13,6 +12,6 @@ class SplashViewModel(
 	}
 
 	private fun startNavigation(){
-		router.navigateToHomeSalons()
+		router.navigateToWelcome()
 	}
 }

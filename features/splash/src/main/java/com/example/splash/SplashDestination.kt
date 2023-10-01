@@ -8,6 +8,6 @@ data class SplashDestination(
 	private val firstStartFlag: Boolean = false,
 ) : FragmentDestination {
 
-	override fun createInstance(): Fragment
-	= SplashFragment.newInstance(firstStartFlag)
+	override fun createInstance(): Fragment =
+		SplashFragment()
 }

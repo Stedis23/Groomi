@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/default_cross"
+		android:drawable="@drawable/ic_done_cross"
+		android:state_checked="false"/>
+
+	<item
+		android:id="@+id/default_tick"
+		android:drawable="@drawable/ic_done_tick"
+		android:state_checked="true"/>
+
+	<transition
+		android:fromId="@id/default_cross"
+		android:toId="@id/default_tick"
+		android:drawable="@drawable/anim_checkbox_from_cross_to_tick"/>
+
+	<transition
+		android:fromId="@id/default_tick"
+		android:toId="@id/default_cross"
+		android:drawable="@drawable/anim_checkbox_from_tick_to_cross"/>
+
+</animated-selector>

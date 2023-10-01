@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="welcome_page_greetings_title">Привет!</string>
+	<string name="welcome_page_greetings_description">Добро пожаловать Groomi! Vы рады что вы решили к нам присоединиться)</string>
+
+	<string name="welcome_page_hairdressing_salon_title">Парикмахерские</string>
+	<string name="welcome_page_hairdressing_salon_description">Находи парикмахерские и барбершопы рядом в один клик!</string>
+
+	<string name="welcome_page_beauty_salon_title">Салоны красоты</string>
+	<string name="welcome_page_beauty_salon_description">Теперь вы точно не забудете про запись в свой любимый салон! Менеджер и уведомления всегда напомнят вам о предстоящем сеансе)</string>
+
+	<string name="welcome_page_service_title">Услуги</string>
+	<string name="welcome_page_service_description">Выбрать услугу теперь проще! Выбирайте лучшие услуги по цене и отзывам от реальных пользователей)</string>
+
+	<string name="welcome_sign_up_button">Перейти к регистрации</string>
+	<string name="welcome_skip_all_button">Начать пользоваться</string>
+
+	<string name="welcome_dot">&#8226;</string>
+
+	<string name="welcome_home">Домашний экран</string>
+</resources>

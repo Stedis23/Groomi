@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+~ Copyright (C) 2019 The Android Open Source Project
+~
+~ Licensed under the Apache License, Version 2.0 (the "License");
+~ you may not use this file except in compliance with the License.
+~ You may obtain a copy of the License at
+~
+~      http://www.apache.org/licenses/LICENSE-2.0
+~
+~ Unless required by applicable law or agreed to in writing, software
+~ distributed under the License is distributed on an "AS IS" BASIS,
+~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~ See the License for the specific language governing permissions and
+~ limitations under the License.
+-->
+
+<resources>
+
+	<!--Components-->
+
+	<!--Navigation Drawer-->
+	<style name="Widget.MyTheme.NavigationView"
+		parent="Widget.MaterialComponents.NavigationView">
+		<item name="itemTextAppearance">?attr/textAppearanceBody2</item>
+	</style>
+
+	<!--AppBarLayout-->
+	<style name="Widget.MyTheme.AppBarLayout"
+		parent="Widget.MaterialComponents.AppBarLayout.Primary">
+		<item name="elevation">0dp</item>
+	</style>
+
+	<!--Primary Button-->
+	<style name="Widget.MyTheme.PrimaryButton"
+		parent="Widget.MaterialComponents.Button.UnelevatedButton">
+		<item name="android:textAppearance">?attr/textAppearanceBody1</item>
+		<item name="rippleColor">?attr/colorPrimaryVariant</item>
+		<item name="android:paddingBottom">16dp</item>
+		<item name="android:paddingTop">16dp</item>
+		<item name="android:paddingStart">16dp</item>
+		<item name="android:paddingEnd">16dp</item>
+		<item name="android:insetTop">0dp</item>
+		<item name="android:insetBottom">0dp</item>
+	</style>
+
+	<!--Secondary Button-->
+	<style name="Widget.MyTheme.SecondaryButton"
+		parent="Widget.MyTheme.PrimaryButton">
+		<item name="backgroundTint">?attr/colorSecondary</item>
+		<item name="rippleColor">?attr/colorSecondaryVariant</item>
+		<item name="android:textColor">?attr/colorOnBackground</item>
+	</style>
+
+	<style name="Widget.MyTheme.SecondaryRedButton"
+		parent="Widget.MyTheme.PrimaryButton">
+		<item name="backgroundTint">@color/red_alpha_16_500</item>
+		<item name="rippleColor">?attr/colorPrimaryVariant</item>
+		<item name="android:textColor">?attr/colorPrimary</item>
+	</style>
+
+	<style name="Widget.MyTheme.GrayButton"
+		parent="Widget.MyTheme.PrimaryButton">
+		<item name="backgroundTint">?attr/colorSecondary</item>
+		<item name="rippleColor">?attr/colorSecondaryVariant</item>
+		<item name="android:textColor">?attr/colorOnSurface</item>
+		<item name="cornerRadius">@dimen/radius_12</item>
+	</style>
+
+	<style name="Widget.MyTheme.AlertButton"
+		parent="Widget.MyTheme.PrimaryButton">
+		<item name="android:layout_width">match_parent</item>
+		<item name="backgroundTint">?attr/colorSecondaryVariant</item>
+		<item name="rippleColor">?attr/colorOnSecondary</item>
+		<item name="android:textColor">?attr/colorOnBackground</item>
+	</style>
+
+	<style name="Widget.MyTheme.EscortsButtonBlue400"
+		parent="Widget.MyTheme.PrimaryButton">
+		<item name="android:textAppearance">?attr/textAppearanceCaption</item>
+	</style>
+
+	<style name="Widget.MyTheme.EscortsEmojiButtonBlue400"
+		parent="Widget.MyTheme.PrimaryButton">
+		<item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+		<item name="android:paddingBottom">@dimen/spacing_12</item>
+		<item name="android:paddingTop">@dimen/spacing_12</item>
+		<item name="android:paddingStart">@dimen/spacing_12</item>
+		<item name="android:paddingEnd">@dimen/spacing_12</item>
+		<item name="android:minHeight">0dp</item>
+		<item name="android:minWidth">0dp</item>
+	</style>
+
+	<!--Text Button-->
+	<style name="Widget.MyTheme.TextButton"
+		parent="Widget.MaterialComponents.Button.TextButton">
+		<item name="android:textAppearance">?attr/textAppearanceBody1</item>
+	</style>
+
+	<!--Primary Button Small-->
+	<style name="Widget.MyTheme.PrimaryButtonSmall"
+		parent="Widget.MaterialComponents.Button.UnelevatedButton">
+		<item name="android:textAppearance">?attr/textAppearanceCaption</item>
+		<item name="rippleColor">?attr/colorPrimaryVariant</item>
+		<item name="android:paddingBottom">12dp</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingStart">12dp</item>
+		<item name="android:paddingEnd">12dp</item>
+	</style>
+
+	<!--Primary Button Small-->
+	<style name="Widget.MyTheme.SecondaryButtonSmall"
+		parent="Widget.MyTheme.PrimaryButtonSmall">
+		<item name="backgroundTint">?attr/colorSecondary</item>
+		<item name="rippleColor">?attr/colorSecondaryVariant</item>
+		<item name="android:textColor">?attr/colorOnBackground</item>
+	</style>
+
+	<!--Text Input Layout-->
+	<style name="Widget.MyTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+		<item name="hintTextAppearance">@style/TextAppearance.MyTheme.TextEditBody2</item>
+		<item name="hintTextColor">@color/input_edit_text_hint_color_state</item>
+		<item name="boxBackgroundColor">@android:color/transparent</item>
+		<item name="shapeAppearance">?attr/shapeAppearanceSmallComponent</item>
+		<item name="boxStrokeWidth">0dp</item>
+		<item name="boxStrokeWidthFocused">0dp</item>
+		<item name="errorIconDrawable">@null</item>
+		<item name="boxStrokeColor">?attr/colorOnSurface</item>
+		<item name="android:textColorHighlight">@color/input_edit_text_highlight_color</item>
+	</style>
+
+	<style name="Widget.MyTheme.InputEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+		<item name="android:textAppearance">@style/TextAppearance.MyTheme.TextEditBody1</item>
+		<item name="android:textColor">@color/input_edit_text_text_color_state</item> <!--почему-то не вытягивает через textAppearance-->
+		<item name="hintTextAppearance">@style/TextAppearance.MyTheme.TextEditBody2</item>
+		<item name="hintTextColor">@color/input_edit_text_hint_color_state</item>
+		<item name="android:background">@drawable/shape_text_field_background</item>
+		<item name="android:textColorHighlight">@color/input_edit_text_highlight_color</item>
+	</style>
+
+	<style name="Widget.MyTheme.AutoCompleteTextView" parent="Widget.MaterialComponents.AutoCompleteTextView.FilledBox">
+		<item name="android:textAppearance">@style/TextAppearance.MyTheme.TextEditBody1</item>
+		<item name="android:textColor">@color/input_edit_text_text_color_state</item> <!--почему-то не вытягивает через textAppearance-->
+		<item name="hintTextAppearance">@style/TextAppearance.MyTheme.TextEditBody2</item>
+		<item name="hintTextColor">@color/input_edit_text_hint_color_state</item>
+		<item name="android:background">@drawable/shape_text_field_background</item>
+		<item name="android:textColorHighlight">@color/input_edit_text_highlight_color</item>
+	</style>
+
+	<style name="Widget.MyTheme.SearchEditText"
+		parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+		<item name="android:textAppearance">@style/TextAppearance.MyTheme.TextEditBody1</item>
+		<item name="android:textColor">?attr/colorOnSurface</item> <!--почему-то не вытягивает через textAppearance-->
+		<item name="hintTextAppearance">@style/TextAppearance.MyTheme.TextEditBody2</item>
+		<item name="hintTextColor">@color/input_edit_text_hint_color_state</item>
+		<item name="android:textColorHighlight">@color/input_edit_text_highlight_color</item>
+	</style>
+
+	<!--Chips-->
+	<style name="Widget.MyTheme.ChipsFilter"
+		parent="Widget.MaterialComponents.Chip.Filter">
+		<item name="android:textColor">@color/chip_text_color</item>
+		<item name="chipBackgroundColor">?attr/colorSurface</item>
+		<item name="chipSurfaceColor">?attr/colorSecondaryVariant</item>
+		<item name="rippleColor">?attr/colorSecondaryVariant</item>
+		<item name="chipStrokeColor">@color/chip_stroke_color</item>
+		<item name="chipStrokeWidth">1dp</item>
+		<item name="chipMinHeight">30dp</item>
+	</style>
+
+	<style name="Widget.MyTheme.ChipsChoice" parent="Widget.MaterialComponents.Chip.Entry">
+		<item name="android:textColor">@color/chip_text_color</item>
+		<item name="chipBackgroundColor">?attr/colorSurface</item>
+		<item name="chipSurfaceColor">?attr/colorSecondaryVariant</item>
+		<item name="rippleColor">?attr/colorSecondaryVariant</item>
+		<item name="chipStrokeColor">@color/chip_stroke_color</item>
+		<item name="chipMinHeight">30dp</item>
+		<item name="chipStrokeWidth">1dp</item>
+		<item name="checkedIconVisible">false</item>
+	</style>
+
+	<style name="TextAppearance.MyTheme.TextEditBody1" parent="TextAppearance.MyTheme.Body1">
+		<item name="fontFamily">@font/noto_sans_medium</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+	<style name="TextAppearance.MyTheme.TextEditBody2" parent="TextAppearance.MyTheme.Body2">
+		<item name="fontFamily">@font/noto_sans_medium</item>
+		<item name="android:includeFontPadding">false</item>
+	</style>
+
+	<!--Chip group-->
+	<style name="ChipGroup" parent="Widget.MaterialComponents.ChipGroup">
+		<item name="chipSpacing">@dimen/spacing_12</item>
+	</style>
+
+	<!--Radiobutton-->
+	<style name="Radiobutton">
+		<item name="buttonTint">@color/toggle_elements_color</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:textAlignment">textStart</item>
+		<item name="android:layout_gravity">start</item>
+		<item name="android:button">@drawable/anim_state_radiobutton</item>
+		<item name="android:textAppearance">@style/Body1Neutral800</item>
+	</style>
+
+	<!--Checkbox-->
+	<style name="Widget.MyTheme.CheckBox"
+		parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+		<item name="buttonTint">@color/toggle_elements_color</item>
+		<item name="android:background">@drawable/anim_state_checkbox</item>
+		<item name="android:textAlignment">textStart</item>
+		<item name="android:layout_gravity">start</item>
+		<item name="android:button">@android:color/transparent</item>
+	</style>
+
+	<!--Heading 3 Neutral 0 DP-->
+	<style name="CardWithGradientHeader6"
+		parent="TextAppearance.MyTheme.Headline6">
+		<item name="android:textColor">?attr/colorSurface</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<!--Body 2 Neutral 0 DP-->
+	<style name="CardWithGradientBody2"
+		parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorSurface</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<!--Subtitle 1 Neutral 0 DP-->
+	<style name="CardWithGradientSubtitle1"
+		parent="TextAppearance.MyTheme.Subtitle1">
+		<item name="android:textColor">?attr/colorSurface</item>
+		<item name="android:textSize">11sp</item>
+	</style>
+
+	<!--textView with date on card-->
+	<style name="CardButton"
+		parent="TextAppearance.MyTheme.Subtitle1">
+		<item name="android:textColor">?attr/colorSurface</item>
+		<item name="android:background">@drawable/shape_card_time</item>
+		<item name="android:textSize">11sp</item>
+	</style>
+
+	<!--Heading 1 DP-->
+	<style name="Header1DP"
+		parent="TextAppearance.MyTheme.Headline4">
+		<item name="android:textSize">26sp</item>
+	</style>
+
+	<!--Heading 1 Color on surface SP-->
+	<style name="Header1Neutral800"
+		parent="TextAppearance.MyTheme.Headline4">
+		<item name="android:textColor">?attr/colorOnSurface</item>
+	</style>
+
+	<!--Heading 2 DP-->
+	<style name="Header2DP"
+		parent="TextAppearance.MyTheme.Headline5">
+		<item name="android:textSize">20sp</item>
+	</style>
+
+	<!--Body 1 Color on background SP-->
+	<style name="Body1Neutral600"
+		parent="TextAppearance.MyTheme.Body1">
+		<item name="android:textColor">?attr/colorOnBackground</item>
+	</style>
+
+	<!--Body 1 Color on secondary SP-->
+	<style name="Body1Neutral400"
+		parent="TextAppearance.MyTheme.Body1">
+		<item name="android:textColor">?attr/colorOnSecondary</item>
+	</style>
+
+	<!--Body 1 Color on surface SP-->
+	<style name="Body1Neutral800" parent="TextAppearance.MyTheme.Body1">
+		<item name="android:textColor">?attr/colorOnSurface</item>
+	</style>
+
+	<!--Body 2 DP-->
+	<style name="Body2DP" parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textSize">12sp</item>
+	</style>
+
+	<!--Body 2 Color on primary SP-->
+	<style name="Body2Neutral0" parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorSecondary</item>
+	</style>
+
+	<!--Body 2 Color on neutral_50 SP-->
+	<style name="Body2Neutral50" parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorSecondary</item>
+	</style>
+
+	<!--Body 2 Color on background SP-->
+	<style name="Body2Neutral600"
+		parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorOnBackground</item>
+	</style>
+
+	<!--Body 2 Color on surface SP-->
+	<style name="Body2Neutral800"
+		parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorOnSurface</item>
+	</style>
+
+	<!--Body 2 Color on secondary SP-->
+	<style name="Body2Neutral400"
+		parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorOnSecondary</item>
+	</style>
+
+	<!--Body 2 Orange 600 SP-->
+	<style name="Body2Orange600"
+		parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">@color/orange_600</item>
+	</style>
+
+	<!--Body 2 Red 500 SP-->
+	<style name="Body2Red500"
+		parent="TextAppearance.MyTheme.Body2">
+		<item name="android:textColor">?attr/colorPrimary</item>
+	</style>
+
+	<!--Heading 2 Color on primary SP-->
+	<style name="Header2Neutral0"
+		parent="TextAppearance.MyTheme.Headline5">
+		<item name="android:textColor">?attr/colorOnPrimary</item>
+	</style>
+
+	<!--Heading 2 Color on surface SP-->
+	<style name="Header2Neutral800"
+		parent="TextAppearance.MyTheme.Headline5">
+		<item name="android:textColor">?attr/colorOnSurface</item>
+	</style>
+
+	<!--Heading 3 Color on surface SP-->
+	<style name="Header3Neutral800"
+		parent="TextAppearance.MyTheme.Headline6">
+		<item name="android:textColor">?attr/colorOnSurface</item>
+	</style>
+
+	<!--Caption Color on background SP-->
+	<style name="CaptionNeutral600"
+		parent="TextAppearance.MyTheme.Caption">
+		<item name="android:textColor">?attr/colorOnBackground</item>
+	</style>
+
+	<!--Caption Color on secondary SP-->
+	<style name="CaptionNeutral400"
+		parent="TextAppearance.MyTheme.Caption">
+		<item name="android:textColor">?attr/colorOnSecondary</item>
+	</style>
+
+	<!--Toolbar parent-->
+	<style name="Widget.MyTheme.Toolbar"
+		parent="Widget.Design.CollapsingToolbar">
+		<item name="android:elevation">0dp</item>
+	</style>
+
+	<!--Event toolbar-->
+	<style name="Widget.MyTheme.EventToolbar"
+		parent="Widget.MyTheme.Toolbar">
+		<item name="android:background">@android:color/transparent</item>
+		<item name="expandedTitleMargin">0dp</item>
+	</style>
+
+	<!--Main toolbar-->
+	<style name="Widget.MyTheme.MainToolbar"
+		parent="Widget.MyTheme.Toolbar">
+		<item name="android:background">?attr/colorSurface</item>
+		<item name="android:contentInsetLeft">0dp</item>
+		<item name="android:contentInsetStart">0dp</item>
+	</style>
+
+	<style name="ItemWithRipple20h">
+		<item name="android:paddingStart">@dimen/spacing_20</item>
+		<item name="android:paddingEnd">@dimen/spacing_20</item>
+		<item name="android:background">?android:attr/selectableItemBackground</item>
+	</style>
+
+	<style name="ItemWithRipple20h10v"
+		parent="ItemWithRipple20h">
+		<item name="android:paddingTop">@dimen/spacing_10</item>
+		<item name="android:paddingBottom">@dimen/spacing_10</item>
+	</style>
+
+	<style name="ItemWithRipple20h12v"
+		parent="ItemWithRipple20h">
+		<item name="android:paddingTop">@dimen/spacing_12</item>
+		<item name="android:paddingBottom">@dimen/spacing_12</item>
+	</style>
+</resources>

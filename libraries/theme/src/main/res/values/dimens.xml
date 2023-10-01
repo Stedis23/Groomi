@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="indent_20">10dp</dimen>
+	<dimen name="indent_94">44dp</dimen>
+</resources>

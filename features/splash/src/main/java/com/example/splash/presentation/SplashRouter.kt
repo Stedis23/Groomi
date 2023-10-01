@@ -1,6 +1,6 @@
-package ru.shiftlab.cftteam.features.splash.presentation
+package com.example.splash.presentation
 
 interface SplashRouter {
 
-	fun navigateToHomeSalons()
+	fun navigateToWelcome()
 }

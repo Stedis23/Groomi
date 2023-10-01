@@ -16,9 +16,13 @@
             <option value="$PROJECT_DIR$/features/salons" />
             <option value="$PROJECT_DIR$/features/salons/homesalons" />
             <option value="$PROJECT_DIR$/features/splash" />
+            <option value="$PROJECT_DIR$/features/welcome" />
             <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/core" />
             <option value="$PROJECT_DIR$/libraries/navigation" />
             <option value="$PROJECT_DIR$/libraries/network" />
+            <option value="$PROJECT_DIR$/libraries/storege" />
+            <option value="$PROJECT_DIR$/libraries/theme" />
             <option value="$PROJECT_DIR$/libraries/viewbinding" />
           </set>
         </option>

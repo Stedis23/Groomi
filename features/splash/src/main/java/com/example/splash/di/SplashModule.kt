@@ -6,9 +6,10 @@ import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
 val SplashListModule = module {
-	viewModel {
+	viewModel {(skipWelcome: Boolean) ->
 		SplashViewModel(
-			router = get()
+			skipWelcome = skipWelcome,
+			router = get(),
 		)
 	}
 }
