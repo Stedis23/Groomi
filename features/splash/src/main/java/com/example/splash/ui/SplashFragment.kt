@@ -27,9 +27,7 @@ class SplashFragment :
 
 	private val viewModel: SplashViewModel by viewModel()
 
-	override fun otherSetups() {
-		viewModel
-	}
+	override fun otherSetups() {}
 
 	override fun binding(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): FragmentSplashBinding =
 		FragmentSplashBinding.inflate(inflater, container, false)

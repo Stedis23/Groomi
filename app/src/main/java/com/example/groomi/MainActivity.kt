@@ -4,15 +4,17 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.groomi.navigation.GlobalRouterName.GLOBAL
 import com.example.groomi.presentation.MainViewModel
 import com.github.terrakok.cicerone.NavigatorHolder
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.example.navigation.GroomiAppNavigator
+import org.koin.core.qualifier.named
 
 class MainActivity : AppCompatActivity() {
 
-	private val navigatorHolder: NavigatorHolder by inject()
+	private val navigatorHolder: NavigatorHolder by inject(named(GLOBAL))
 	private val navigator = GroomiAppNavigator(this, R.id.host_global)
 	private val viewModel: MainViewModel by viewModel()
 

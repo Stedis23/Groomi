@@ -9,5 +9,5 @@ data class SplashDestination(
 ) : FragmentDestination {
 
 	override fun createInstance(): Fragment
-	= SplashFragment()
+	= SplashFragment.newInstance(firstStartFlag)
 }

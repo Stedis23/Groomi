@@ -2,6 +2,7 @@ package com.example.groomi.navigation
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import com.github.terrakok.cicerone.Router
@@ -65,6 +66,7 @@ private class CreateInstanceFragmentScreen(
 
 	override fun createFragment(factory: FragmentFactory): Fragment =
 		fragmentDestination.createInstance()
+
 }
 
 private class CreateInstanceActivityScreen(

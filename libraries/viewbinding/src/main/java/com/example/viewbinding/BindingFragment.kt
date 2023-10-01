@@ -11,7 +11,8 @@ import com.example.viewbinding.ext.closeKeyboard
 abstract class BindingFragment<VB : ViewBinding> : Fragment(){
 
 	private var _binding: VB? = null
-	val binding = _binding ?: throw NullPointerException("Binding can't be null")
+	val binding
+		get() = _binding ?: throw NullPointerException("Binding can't be null")
 
 	override fun onCreateView(
 		inflater: LayoutInflater,
