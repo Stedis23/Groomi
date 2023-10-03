@@ -1,9 +1,10 @@
 package com.example.groomi.navigation
 
+import com.example.main.MainDestination
 import com.example.navigation.GlobalRouter
 import com.example.welcome.presentation.WelcomeRouter
 
-class WelcomeRouterImp(
+class WelcomeRouterImpl(
 	private val router: GlobalRouter,
 ): WelcomeRouter {
 
@@ -16,6 +17,6 @@ class WelcomeRouterImp(
 	}
 
 	override fun navigateToMain() {
-		TODO("Not yet implemented")
+		router.replace(MainDestination)
 	}
 }

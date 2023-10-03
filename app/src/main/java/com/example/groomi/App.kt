@@ -4,12 +4,13 @@ import android.app.Application
 import com.example.groomi.navigation.di.AppModule
 import com.example.groomi.navigation.di.RouterModule
 import com.example.homesalons.di.HomeSalonsModules
+import com.example.main.di.MainFragmentModule
 import com.example.welcome.di.WelcomeModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext.startKoin
 import org.koin.core.logger.Level
-import ru.shiftlab.cftteam.features.splash.di.SplashListModule
+import com.example.splash.di.SplashModule
 
 class App: Application() {
 
@@ -21,9 +22,10 @@ class App: Application() {
 			androidContext(this@App)
 
 			modules(AppModule)
+			modules(MainFragmentModule)
 			modules(RouterModule)
 			modules(HomeSalonsModules)
-			modules(SplashListModule)
+			modules(SplashModule)
 			modules(WelcomeModules)
 		}
 	}

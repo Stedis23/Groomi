@@ -1,11 +1,10 @@
 package com.example.navigation
 
-import com.example.navigation.FragmentDestination
 import kotlinx.coroutines.flow.StateFlow
 
 interface MainRouter {
 
-	val currentScreen: StateFlow<FragmentDestination>
+	val currentScreenFlow: StateFlow<FragmentDestination>
 
 	fun open(fragmentDestination: FragmentDestination)
 
