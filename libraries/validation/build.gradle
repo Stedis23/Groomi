@@ -1,28 +1,17 @@
 plugins {
-	id 'com.android.application'
+	id 'com.android.library'
 	id 'org.jetbrains.kotlin.android'
 }
 
 android {
-	namespace 'com.example.groomi'
+	namespace 'com.example.validation'
 	compileSdk 33
 
 	defaultConfig {
-		applicationId "com.example.groomi"
 		minSdk 24
-		targetSdk 33
-		versionCode 1
-		versionName "1.0"
 
 		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-		packagingOptions {
-			resources.excludes.add("META-INF/*")
-		}
-
-		buildFeatures {
-			viewBinding = true
-		}
+		consumerProguardFiles "consumer-rules.pro"
 	}
 
 	buildTypes {
@@ -45,20 +34,15 @@ dependencies {
 	implementation 'androidx.core:core-ktx:1.9.0'
 	implementation 'androidx.appcompat:appcompat:1.6.1'
 	implementation 'com.google.android.material:material:1.9.0'
-	implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
+	implementation project(':libraries:core')
+	implementation project(':libraries:theme')
 	implementation project(':libraries:viewbinding')
-	implementation project(':libraries:navigation')
-	implementation project(':libraries:validation')
-	implementation project(':features:salons:homesalons')
-	implementation project(':features:splash')
-	implementation project(':features:welcome')
-	implementation project(':features:main')
-	implementation project(':features:user:loginselection')
-	implementation project(':features:user:profile')
 
 	implementation 'io.insert-koin:koin-android:3.1.2'
-	implementation 'com.github.terrakok:cicerone:7.1'
+	implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+	implementation 'io.michaelrocks:libphonenumber-android:8.13.2'
+	implementation 'ru.tinkoff.decoro:decoro:1.5.1'
 
 	testImplementation 'junit:junit:4.13.2'
 	androidTestImplementation 'androidx.test.ext:junit:1.1.5'

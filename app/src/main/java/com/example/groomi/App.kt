@@ -11,6 +11,7 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext.startKoin
 import org.koin.core.logger.Level
 import com.example.splash.di.SplashModule
+import com.example.validation.di.ValidationModules
 
 class App : Application() {
 
@@ -27,6 +28,7 @@ class App : Application() {
 			modules(HomeSalonsModules)
 			modules(SplashModule)
 			modules(WelcomeModules)
+			modules(ValidationModules)
 		}
 	}
 }

@@ -27,6 +27,7 @@
             <option value="$PROJECT_DIR$/libraries/network" />
             <option value="$PROJECT_DIR$/libraries/storege" />
             <option value="$PROJECT_DIR$/libraries/theme" />
+            <option value="$PROJECT_DIR$/libraries/validation" />
             <option value="$PROJECT_DIR$/libraries/viewbinding" />
           </set>
         </option>

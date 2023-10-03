@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="validators_error_empty_email">Укажите почту</string>
+	<string name="validators_error_invalid_email">Некорректный ввод почты</string>
+	<string name="validators_error_invalid_length_email">Длина почты должна быть от 6 до 100 символов</string>
+	<string name="validators_error_invalid_length_before_at_email">Длина почты до @ должна быть от 6 до 30 символов</string>
+
+	<string name="validators_error_empty_firstName">Укажите имя</string>
+	<string name="validators_error_empty_lastName">Укажите фамилию</string>
+	<string name="validators_error_invalid_symbol">Недопустимые символы для поля</string>
+	<string name="validators_error_not_len_50">Установлено ограничение в 50 символов</string>
+
+	<string name="validators_error_empty_phone">Укажите номер телефона</string>
+	<string name="validators_error_invalid_phone">Некорректный ввод номера телефона</string>
+	<string name="validators_error_max_len_phone">Недопустимая длина номера телефона</string>
+	<string name="validators_error_country_detect_phone">Невозможно определить страну</string>
+
+	<string name="validators_error_not_equals_pass">Пароли не совпадают</string>
+
+	<string name="validators_error_should_contain_numbers">Пароль должен содержать цифры</string>
+	<string name="validators_error_low_pass">Пароль должен содержать строчные буквы латиницы или кириллицы</string>
+	<string name="validators_error_upp_pass">Пароль должен содержать заглавные буквы латиницы или кириллицы</string>
+	<string name="validators_error_not_len_pass">Длина пароля должна быть от 8 до 30 символов</string>
+	<string name="validators_error_invalid_symbols_pass">Пароль содержит недопустимые символы</string>
+
+	<string name="validators_error_empty">Поле не может быть пустым</string>
+</resources>
