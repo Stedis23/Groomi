@@ -12,12 +12,12 @@ import org.koin.core.context.GlobalContext.startKoin
 import org.koin.core.logger.Level
 import com.example.splash.di.SplashModule
 
-class App: Application() {
+class App : Application() {
 
 	override fun onCreate() {
 		super.onCreate()
 
-		startKoin{
+		startKoin {
 			androidLogger(Level.ERROR)
 			androidContext(this@App)
 

@@ -6,7 +6,7 @@ import com.example.welcome.presentation.WelcomeRouter
 
 class WelcomeRouterImpl(
 	private val router: GlobalRouter,
-): WelcomeRouter {
+) : WelcomeRouter {
 
 	override fun navigateBack() {
 		router.exit()

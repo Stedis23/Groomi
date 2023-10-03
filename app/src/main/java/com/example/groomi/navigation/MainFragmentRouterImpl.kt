@@ -1,22 +1,23 @@
 package com.example.groomi.navigation
 
-
 import com.example.homesalons.HomeSalonsDestination
+import com.example.loginselection.LoginSelectionDestination
 import com.example.main.presentation.MainFragmentRouter
 import com.example.main.presentation.MainScreenState
 import com.example.navigation.MainRouter
+import com.example.profile.ProfileDestination
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class MainFragmentRouterImpl(
 	private val router: MainRouter
-): MainFragmentRouter {
+) : MainFragmentRouter {
 
 	override val currentScreenFlow: Flow<MainScreenState> =
 		router.currentScreenFlow.map {
 			when (it) {
-				HomeSalonsDestination  -> MainScreenState.SALONS
-				ProfileDestination     -> MainScreenState.PROFILE
+				HomeSalonsDestination     -> MainScreenState.SALONS
+				ProfileDestination        -> MainScreenState.PROFILE
 				LoginSelectionDestination -> MainScreenState.LOGIN_SELECTION
 				else                      -> throw IllegalAccessException("MainFragmentRouterImpl doesnt work with ${it::class.simpleName}")
 			}

@@ -5,13 +5,13 @@ import androidx.lifecycle.ViewModel
 class SplashViewModel(
 	private val skipWelcome: Boolean,
 	private val router: SplashRouter,
-) : ViewModel(){
+) : ViewModel() {
 
-	init{
+	init {
 		startNavigation()
 	}
 
-	private fun startNavigation(){
+	private fun startNavigation() {
 		router.navigateToWelcome()
 	}
 }

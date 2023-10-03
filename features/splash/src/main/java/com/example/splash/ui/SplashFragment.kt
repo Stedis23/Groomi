@@ -15,7 +15,7 @@ import org.koin.core.parameter.parametersOf
 class SplashFragment :
 	BindingFragment<FragmentSplashBinding>() {
 
-	private val viewModel: SplashViewModel by viewModel{
+	private val viewModel: SplashViewModel by viewModel {
 		parametersOf(
 			requireContext().getSharedPreferences(WELCOME_PREF, Context.MODE_PRIVATE)
 				.getBoolean(WELCOME_SKIP_VALUE, false)

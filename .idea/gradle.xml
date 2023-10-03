@@ -17,6 +17,9 @@
             <option value="$PROJECT_DIR$/features/salons" />
             <option value="$PROJECT_DIR$/features/salons/homesalons" />
             <option value="$PROJECT_DIR$/features/splash" />
+            <option value="$PROJECT_DIR$/features/user" />
+            <option value="$PROJECT_DIR$/features/user/loginselection" />
+            <option value="$PROJECT_DIR$/features/user/profile" />
             <option value="$PROJECT_DIR$/features/welcome" />
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/core" />
