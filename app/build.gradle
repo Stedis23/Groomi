@@ -51,12 +51,16 @@ dependencies {
 	implementation project(':libraries:navigation')
 	implementation project(':libraries:network')
 	implementation project(':libraries:validation')
+
 	implementation project(':features:salons:homesalons')
 	implementation project(':features:splash')
 	implementation project(':features:welcome')
 	implementation project(':features:main')
 	implementation project(':features:user:loginselection')
 	implementation project(':features:user:profile')
+
+	implementation project(':shared:network:token:domain')
+	implementation project(':shared:network:token:data')
 
 	implementation 'io.insert-koin:koin-android:3.1.2'
 	implementation 'com.github.terrakok:cicerone:7.1'

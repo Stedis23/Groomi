@@ -29,6 +29,11 @@
             <option value="$PROJECT_DIR$/libraries/theme" />
             <option value="$PROJECT_DIR$/libraries/validation" />
             <option value="$PROJECT_DIR$/libraries/viewbinding" />
+            <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/network" />
+            <option value="$PROJECT_DIR$/shared/network/token" />
+            <option value="$PROJECT_DIR$/shared/network/token/data" />
+            <option value="$PROJECT_DIR$/shared/network/token/domain" />
           </set>
         </option>
       </GradleProjectSettings>
