@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools">
 
+	<uses-permission android:name="android.permission.INTERNET"/>
+
 	<application
 		android:name=".App"
 		android:allowBackup="true"
@@ -18,6 +20,7 @@
 			android:launchMode="singleTop"
 			android:exported="true"
 			android:screenOrientation="portrait"
+			android:networkSecurityConfig="@xml/network_security_config"
 			android:windowSoftInputMode="adjustResize">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

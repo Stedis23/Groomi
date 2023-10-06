@@ -5,6 +5,9 @@ import com.example.groomi.navigation.di.AppModule
 import com.example.groomi.navigation.di.RouterModule
 import com.example.homesalons.di.HomeSalonsModules
 import com.example.main.di.MainFragmentModule
+import com.example.network.utils.di.BACKEND
+import com.example.network.utils.di.BACKEND_FAKE
+import com.example.network.utils.di.NetworkModule
 import com.example.welcome.di.WelcomeModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -21,10 +24,16 @@ class App : Application() {
 		startKoin {
 			androidLogger(Level.ERROR)
 			androidContext(this@App)
+			properties(
+				mapOf(
+					BACKEND_FAKE to "https://fackeserver.ru",
+				)
+			)
 
 			modules(AppModule)
 			modules(MainFragmentModule)
 			modules(RouterModule)
+			modules(NetworkModule)
 			modules(HomeSalonsModules)
 			modules(SplashModule)
 			modules(WelcomeModules)

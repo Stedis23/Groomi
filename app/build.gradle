@@ -49,6 +49,7 @@ dependencies {
 
 	implementation project(':libraries:viewbinding')
 	implementation project(':libraries:navigation')
+	implementation project(':libraries:network')
 	implementation project(':libraries:validation')
 	implementation project(':features:salons:homesalons')
 	implementation project(':features:splash')
