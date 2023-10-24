@@ -1,10 +1,12 @@
 package com.example.groomi.navigation.di
 
+import com.example.groomi.navigation.LoginSelectionRouterImpl
 import com.example.groomi.navigation.MainActivityRouterImpl
 import com.example.groomi.navigation.MainFragmentRouterImpl
 import com.example.groomi.navigation.SplashRouterImpl
 import com.example.groomi.navigation.WelcomeRouterImpl
 import com.example.groomi.presentation.MainActivityRouter
+import com.example.loginselection.presentation.LoginSelectionRouter
 import com.example.main.presentation.MainFragmentRouter
 import com.example.welcome.presentation.WelcomeRouter
 import org.koin.dsl.module
@@ -15,4 +17,5 @@ val RouterModule = module {
 	factory<MainFragmentRouter> { MainFragmentRouterImpl(get()) }
 	factory<SplashRouter> { SplashRouterImpl(get()) }
 	factory<WelcomeRouter> { WelcomeRouterImpl(get()) }
+	factory<LoginSelectionRouter> { LoginSelectionRouterImpl(get()) }
 }

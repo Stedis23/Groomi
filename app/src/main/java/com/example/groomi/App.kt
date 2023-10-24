@@ -1,6 +1,7 @@
 package com.example.groomi
 
 import android.app.Application
+import com.example.data.di.FakeTokenNetworkModule
 import com.example.domain.di.TokenDomainModule
 import com.example.groomi.navigation.di.AppModule
 import com.example.groomi.navigation.di.RouterModule
@@ -16,6 +17,7 @@ import org.koin.core.logger.Level
 import com.example.splash.di.SplashModule
 import com.example.validation.di.ValidationModules
 import com.example.data.di.TokenDataModule
+import com.example.loginselection.di.LoginSelectionModule
 
 class App : Application() {
 
@@ -42,6 +44,9 @@ class App : Application() {
 
 			modules(TokenDomainModule)
 			modules(TokenDataModule)
+			modules(FakeTokenNetworkModule)
+
+			modules(LoginSelectionModule)
 		}
 	}
 }

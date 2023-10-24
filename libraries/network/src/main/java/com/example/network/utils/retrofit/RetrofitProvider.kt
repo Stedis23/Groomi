@@ -17,7 +17,7 @@ inline fun <reified T> Scope.getRetrofit(attachedValue: String = FAKE): T =
 	if (BuildConfig.DEBUG) {
 		get(T::class, named(attachedValue).also { Log.d("getRetrofit", it.value) })
 	} else {
-		get(T::class, named(ORIGINAL))
+		get(T::class, named(FAKE))
 	}
 
 fun provideRetrofit(

@@ -5,7 +5,7 @@ plugins {
 
 android {
 	namespace 'com.example.groomi'
-	compileSdk 33
+	compileSdk 34
 
 	defaultConfig {
 		applicationId "com.example.groomi"
@@ -58,6 +58,8 @@ dependencies {
 	implementation project(':features:main')
 	implementation project(':features:user:loginselection')
 	implementation project(':features:user:profile')
+	implementation project(':features:user:signup')
+	implementation project( ':features:user:signin')
 
 	implementation project(':shared:network:token:domain')
 	implementation project(':shared:network:token:data')

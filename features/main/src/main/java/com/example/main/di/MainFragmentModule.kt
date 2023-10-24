@@ -7,6 +7,7 @@ import org.koin.dsl.module
 val MainFragmentModule = module {
 	viewModel {
 		MainViewModel(
+			tokenExistsUseCase = get(),
 			router = get(),
 		)
 	}

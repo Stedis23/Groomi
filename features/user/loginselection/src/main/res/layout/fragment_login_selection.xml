@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/spacing_56"
+				app:srcCompat="@drawable/ic_we_groomi"/>
+
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/sign_up_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/spacing_20"
+				android:text="@string/login_selection_sign_up_button"
+				style="@style/Widget.MyTheme.PrimaryButton"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/textView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="1dp"
+					android:text="@string/login_selection_sign_in_title"
+					style="@style/Body1Neutral600"/>
+
+				<TextView
+					android:id="@+id/sign_in_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:clickable="true"
+					android:focusable="true"
+					android:text="@string/login_selection_sign_in_text_button"
+					android:textColor="?attr/colorPrimary"
+					style="@style/TextAppearance.MyTheme.Body1"/>
+			</LinearLayout>
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

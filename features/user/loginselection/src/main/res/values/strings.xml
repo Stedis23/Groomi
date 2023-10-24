@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="login_selection_toolbar_title">Профиль</string>
+	<string name="login_selection_sign_up_button">Зарегистрироваться</string>
+	<string name="login_selection_sign_in_title">Уже зарегистрированы?&#160;</string>
+	<string name="login_selection_sign_in_text_button">Войти</string>
+</resources>
